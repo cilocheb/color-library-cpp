@@ -17,6 +17,7 @@ g++ -std=c++17 color.cpp main.cpp -o color_demo
 ```
 ## Основные возможности
 1. Создание цветов
+ ```bash
    // Из RGB-значений (непрозрачный)
 Color red(255, 0, 0);
 
@@ -25,8 +26,9 @@ Color transparentGreen(0, 255, 0, 128);
 
 // По имени цвета (16 предопределенных цветов)
 Color blue("blue");
+```
 2. Доступ к компонентам цвета
-
+```bash
 // Получение значений
 int r = color.getRed();
 int a = color.getAlpha();
@@ -34,3 +36,4 @@ int a = color.getAlpha();
 // Изменение значений
 color.setGreen(150);
 color.setAlpha(200);
+```
