@@ -14,3 +14,23 @@ C++ Color Library Implementation
 ## Компиляция
 ```bash
 g++ -std=c++17 color.cpp main.cpp -o color_demo
+```
+## Основные возможности
+1. Создание цветов
+   // Из RGB-значений (непрозрачный)
+Color red(255, 0, 0);
+
+// Из RGBA-значений (с прозрачностью)
+Color transparentGreen(0, 255, 0, 128);
+
+// По имени цвета (16 предопределенных цветов)
+Color blue("blue");
+2. Доступ к компонентам цвета
+
+// Получение значений
+int r = color.getRed();
+int a = color.getAlpha();
+
+// Изменение значений
+color.setGreen(150);
+color.setAlpha(200);
